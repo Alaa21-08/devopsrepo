@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Bienvenue sur la page de voiture 1</h1>
+        <h1>Bienvenue sur la page de voiture 100</h1>
       </header>
 
       <main className="main">
