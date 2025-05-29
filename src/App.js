@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import mercedesImage from './car.jpg';    // Mercedes image
-import bentleyImage from './bentley.jpg'; // Bentley image
+import mercedesImage from './car.jpg';    // Mercedes
+import bentleyImage from './bentley.jpg'; // Bentley
+import bmwImage from './bmw.jpg';          // BMW
 
 function App() {
   const mercedesCars = [1, 2, 3];
   const bentleyCars = [1, 2, 3];
+  const bmwCars = [1, 2, 3];
 
   return (
     <div className="container">
@@ -14,7 +16,7 @@ function App() {
       </header>
 
       <main className="main">
-        {/* Première ligne - Mercedes */}
+        {/* Ligne 1 - Mercedes */}
         <h2 className="author-name">Alaa Semmar</h2>
         <div className="car-row">
           {mercedesCars.map((car, index) => (
@@ -25,13 +27,24 @@ function App() {
           ))}
         </div>
 
-        {/* Deuxième ligne - Bentley */}
+        {/* Ligne 2 - Bentley */}
         <h2 className="author-name">Qejiou Salah eddine</h2>
         <div className="car-row">
           {bentleyCars.map((car, index) => (
             <div key={index} className="car-block">
               <img src={bentleyImage} alt={`Bentley ${index + 1}`} className="car-image" />
               <p>Bentley Continental GT.</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Ligne 3 - BMW */}
+        <h2 className="author-name">El Jadaoui Mohamed Mehdi</h2>
+        <div className="car-row">
+          {bmwCars.map((car, index) => (
+            <div key={index} className="car-block">
+              <img src={bmwImage} alt={`BMW ${index + 1}`} className="car-image" />
+              <p>BMW M4 Competition.</p>
             </div>
           ))}
         </div>
