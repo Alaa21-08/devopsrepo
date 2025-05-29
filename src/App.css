@@ -24,12 +24,31 @@ body {
   padding: 40px;
 }
 
+.author-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.car-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.car-block {
+  max-width: 300px;
+}
+
 .car-image {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer {
